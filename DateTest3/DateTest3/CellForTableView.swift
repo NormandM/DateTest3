@@ -43,10 +43,21 @@ extension CellForTableView {
         cell.eventCellLabel.layer.cornerRadius = 10.0
         cell.eventCellLabel.backgroundColor = UIColor.lightGray
     }
-    func displayInvisibleEventCell(cell: CellForTableView) {
-        cell.eventCellLabel.textColor = UIColor.clear
-        cell.eventCellLabel.backgroundColor = UIColor.clear
+    func displayGreenEventCell(cell: CellForTableView) {
+        cell.eventCellLabel.textColor = UIColor.blue
+        cell.eventCellLabel.layer.masksToBounds = true
+        cell.eventCellLabel.layer.cornerRadius = 10.0
+        cell.eventCellLabel.backgroundColor = UIColor.green
     }
+    func displayRedEventCell(cell: CellForTableView) {
+        cell.eventCellLabel.textColor = UIColor.blue
+        cell.eventCellLabel.layer.masksToBounds = true
+        cell.eventCellLabel.layer.cornerRadius = 10.0
+        cell.eventCellLabel.backgroundColor = UIColor.red
+    }
+
+
+
 
 
 }
